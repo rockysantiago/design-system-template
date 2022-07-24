@@ -1,7 +1,8 @@
 import React from 'react';
 import { addDecorator } from '@storybook/react';
-import { withThemesProvider } from 'storybook-addon-styled-component-theme';
 import { ThemeProvider } from 'styled-components';
+import { withThemesProvider } from 'themeprovider-storybook';
+
 import { defaultTheme, GlobalStyle } from '../src/shared';
 
 addDecorator(withThemesProvider([{ ...defaultTheme }]), ThemeProvider);
