@@ -7,7 +7,6 @@ module.exports = {
     'themeprovider-storybook/register',
   ],
   framework: '@storybook/react',
-  staticDirs: ['../public'],
   typescript: {
     check: false,
     checkOptions: {},
