@@ -34,9 +34,9 @@ export const Footer: React.FC<FooterProps> = ({
 
 const Container = styled.div`
   align-items: flex-start;
-  background-color: ${({ theme }) => theme.color.action};
+  background-color: ${({ theme }) => theme.color.base};
   display: flex;
-  gap: 1.25em;
+  gap: 5em;
   word-break: break-all;
   padding: 0.75em 1.25em;
 
