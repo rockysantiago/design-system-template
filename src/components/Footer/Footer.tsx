@@ -32,11 +32,10 @@ export const Footer: React.FC<FooterProps> = ({
   </Container>
 );
 
-const Container = styled.footer`
+const Container = styled.div`
   align-items: flex-start;
   background-color: ${({ theme }) => theme.color.base};
   display: flex;
-  flex-shrink: 0;
   gap: 1.25em;
   word-break: break-all;
   padding: 0.75em 1.25em;

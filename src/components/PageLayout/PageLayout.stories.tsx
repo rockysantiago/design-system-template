@@ -20,7 +20,6 @@ Base.args = {
       style={{
         background: 'red',
         color: 'white',
-        flexShrink: 0,
         padding: '1.5em 2.5em',
         textAlign: 'center',
       }}
@@ -28,42 +27,47 @@ Base.args = {
       Header
     </div>
   ),
-  children: (
-    <>
-      <aside
+  sider: {
+    isEnabled: true,
+    node: (
+      <div
         style={{
           alignItems: 'center',
           background: 'yellow',
           display: 'flex',
-          flex: '0 320px',
+          flex: '1',
           justifyContent: 'center',
         }}
       >
         Aside
-      </aside>
-      <section
-        style={{
-          alignItems: 'center',
-          display: 'flex',
-          flex: 1,
-          justifyContent: 'center',
-        }}
-      >
-        Content
-      </section>
-    </>
-  ),
-  footer: (
+      </div>
+    ),
+  },
+  children: (
     <div
       style={{
-        background: 'blue',
-        color: 'white',
-        flexShrink: 0,
-        padding: '0.75em 1.25em',
-        textAlign: 'center',
+        alignItems: 'center',
+        display: 'flex',
+        flex: 1,
+        justifyContent: 'center',
       }}
     >
-      Footer
+      Content
     </div>
   ),
+  footer: {
+    isEnabled: true,
+    node: (
+      <div
+        style={{
+          background: 'blue',
+          color: 'white',
+          padding: '0.75em 1.25em',
+          textAlign: 'center',
+        }}
+      >
+        Footer
+      </div>
+    ),
+  },
 };
