@@ -29,7 +29,7 @@ export const Footer: React.FC<FooterProps> = ({
         {disclaimerTitle}
       </DisclaimerTitle>
     )}
-    <div>This is a chromatic test</div>
+    <div style={{ color: 'white' }}>This is a chromatic test</div>
   </Container>
 );
 
