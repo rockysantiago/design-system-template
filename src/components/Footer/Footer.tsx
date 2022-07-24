@@ -3,9 +3,21 @@ import styled from 'styled-components';
 import { gapPolyFill } from '../..';
 
 export interface FooterProps {
+  /**
+   * Metadata for illustrative purpose
+   */
   illustrativePurpose: string;
+  /**
+   * Enabled state of illustrative purpose
+   */
   isIllustrativePurposeVisible: boolean;
+  /**
+   * Metadata for disclaimer title
+   */
   disclaimerTitle: string;
+  /**
+   * Enabled state of disclaimer title
+   */
   isDisclaimerTitleVisible: boolean;
   onClick: () => void;
 }
