@@ -29,6 +29,7 @@ export const Footer: React.FC<FooterProps> = ({
         {disclaimerTitle}
       </DisclaimerTitle>
     )}
+    <div>This is a chromatic test</div>
   </Container>
 );
 
@@ -36,7 +37,7 @@ const Container = styled.div`
   align-items: flex-start;
   background-color: ${({ theme }) => theme.color.base};
   display: flex;
-  gap: 5em;
+  gap: 1.25em;
   word-break: break-all;
   padding: 0.75em 1.25em;
 
