@@ -29,7 +29,7 @@ export const color = {
 
 export const typography = {
   type: {
-    primary: `${SupportedFonts.NotoSansDisplay}, ${SupportedFonts.NotoSerif}`,
+    primary: 'Arial',
   },
   weight: {
     regular: '400',
