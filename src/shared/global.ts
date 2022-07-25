@@ -46,8 +46,8 @@ const setFontFace = (fontFamily: SupportedFonts) => {
 };
 
 export const bodyStyles = css`
-  ${setFontFace(SupportedFonts.NotoSansDisplay)}
-  ${setFontFace(SupportedFonts.NotoSerif)}
+  /* ${setFontFace(SupportedFonts.NotoSansDisplay)}
+  ${setFontFace(SupportedFonts.NotoSerif)} */
 
   font-family: ${typography.type.primary};
   color: ${color.dark};
