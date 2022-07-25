@@ -1,5 +1,4 @@
 import { DefaultTheme } from 'styled-components';
-import { SupportedFonts } from '..';
 
 type ThemeColorType = typeof color;
 type ThemeTypographyType = typeof typography;
@@ -29,7 +28,7 @@ export const color = {
 
 export const typography = {
   type: {
-    primary: `${SupportedFonts.NotoSansDisplay}, ${SupportedFonts.NotoSerif}`,
+    primary: 'noto-sans-display, noto-serif',
   },
   weight: {
     regular: '400',
