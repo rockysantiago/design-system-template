@@ -1,51 +1,54 @@
 import { createGlobalStyle, css } from 'styled-components';
 import { color, typography } from './styles';
 
-// import { SupportedFonts } from '..';
+type SupportedFonts = 'noto-sans-display' | 'noto-serif';
 
-// const setFontFace = (fontFamily: SupportedFonts) => {
-//   const url = `fonts/${fontFamily}`;
+const setFontFace = (fontFamily: SupportedFonts) => {
+  const url = `fonts/${fontFamily}`;
 
-//   return css`
-//     @font-face {
-//       font-family: ${fontFamily};
-//       font-style: normal;
-//       font-weight: 700;
-//       font-stretch: 100%;
-//       font-display: swap;
-//       src: url('${url}-Bold.ttf') format('truetype');
-//     }
+  return css`
+    @font-face {
+      font-family: ${fontFamily};
+      font-style: normal;
+      font-weight: 700;
+      font-stretch: 100%;
+      font-display: swap;
+      src: url('${url}-Bold.ttf') format('truetype');
+    }
 
-//     @font-face {
-//       font-family: ${fontFamily};
-//       font-style: italic;
-//       font-weight: 700;
-//       font-stretch: 100%;
-//       font-display: swap;
-//       src: url('${url}-BoldItalic.ttf') format('truetype');
-//     }
+    @font-face {
+      font-family: ${fontFamily};
+      font-style: italic;
+      font-weight: 700;
+      font-stretch: 100%;
+      font-display: swap;
+      src: url('${url}-BoldItalic.ttf') format('truetype');
+    }
 
-//     @font-face {
-//       font-family: ${fontFamily};
-//       font-style: italic;
-//       font-weight: 400;
-//       font-stretch: 100%;
-//       font-display: swap;
-//       src: url('${url}-Italic.ttf') format('truetype');
-//     }
+    @font-face {
+      font-family: ${fontFamily};
+      font-style: italic;
+      font-weight: 400;
+      font-stretch: 100%;
+      font-display: swap;
+      src: url('${url}-Italic.ttf') format('truetype');
+    }
 
-//     @font-face {
-//       font-family: ${fontFamily};
-//       font-style: normal;
-//       font-weight: 400;
-//       font-stretch: 100%;
-//       font-display: swap;
-//       src: url('${url}-Regular.ttf') format('truetype');
-//     }
-//   `;
-// };
+    @font-face {
+      font-family: ${fontFamily};
+      font-style: normal;
+      font-weight: 400;
+      font-stretch: 100%;
+      font-display: swap;
+      src: url('${url}-Regular.ttf') format('truetype');
+    }
+  `;
+};
 
 export const bodyStyles = css`
+  ${setFontFace('noto-sans-display')}
+  ${setFontFace('noto-serif')}
+
   font-family: ${typography.type.primary};
   color: ${color.dark};
 
