@@ -5,14 +5,16 @@ import { withThemesProvider } from 'themeprovider-storybook';
 
 import { defaultTheme, GlobalStyle } from '../src/shared';
 
-addDecorator(withThemesProvider([{ ...defaultTheme }]), ThemeProvider);
+// addDecorator(withThemesProvider([{ ...defaultTheme }]), ThemeProvider);
 
 // Global decorator to apply the styles to all stories
 export const decorators = [
   (Story) => (
     <>
-      <GlobalStyle />
-      <Story />
+      <ThemeProvider theme={defaultTheme}>
+        <GlobalStyle />
+        <Story />
+      </ThemeProvider>
     </>
   ),
 ];
