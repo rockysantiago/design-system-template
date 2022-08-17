@@ -1,5 +1,6 @@
 import React from 'react';
 import { ThemeProvider } from 'styled-components';
+import 'antd/dist/antd.css'; // or 'antd/dist/antd.less'
 
 import { defaultTheme, GlobalStyle } from '../src/shared';
 
