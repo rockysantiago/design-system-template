@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
+import { Button } from '../Button';
 
 interface IPageNode {
   node: React.ReactNode;
@@ -23,6 +24,7 @@ export const PageLayout: React.FC<PageLayoutProps> = ({
     <Header>{header}</Header>
     <Body>
       {sider?.isEnabled && <Sider>{sider.node}</Sider>}
+      <Button disabled={false}>Hello</Button>
       <Content>{children}</Content>
     </Body>
     {footer?.isEnabled && <Footer>{footer.node}</Footer>}
