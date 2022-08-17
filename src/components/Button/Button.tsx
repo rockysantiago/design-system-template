@@ -26,7 +26,7 @@ export const Button: React.FC<ButtonProps> = ({
 );
 
 const StyledAntDButton = styled(AntDButton)<ButtonProps>`
-  border-radius: 5px;
+  border-radius: 1px;
   color: ${({ theme }) => theme.color.dark};
   font-size: ${({ theme }) => theme.typography.size.m};
   height: auto;
