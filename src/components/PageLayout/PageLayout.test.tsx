@@ -13,14 +13,14 @@ describe('PageLayout', () => {
           sider={{ isEnabled: true, node: 'sider' }}
           footer={{ isEnabled: true, node: 'footer' }}
         >
-          foo
+          fooo
         </PageLayout>
       </ProviderTest>
     );
     expect(getByText(/header/)).toBeInTheDocument();
     expect(getByText(/sider/)).toBeInTheDocument();
     expect(getByText(/footer/)).toBeInTheDocument();
-    expect(getByText('foo')).toBeInTheDocument();
+    expect(getByText('fooo')).toBeInTheDocument();
   });
 
   it('should not render sider and footer if isEnabled is false', () => {
